@@ -1,0 +1,19 @@
+//maincss
+//base
+@import "base/variables",
+"base/mixin",
+"component/media-q";
+//base 
+@import "base/base";
+//component
+@import "component/barra-menu",
+"component/header",
+"component/welcome",
+"component/services",
+"component/form.scss",
+"component/clientes",
+"component/testimoniales",
+"component/mapa",
+"component/footer",
+"component/pages";
+//layoput

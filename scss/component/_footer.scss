@@ -1,0 +1,111 @@
+.footer {
+    width: 100%;
+    background-color: #fff;
+    &__contenedor {
+        padding-top: 2rem;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.2rem;
+    }
+    &__description {
+        border-bottom: 1px solid #000000;
+        @include responsive(phone) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        @include responsive(tab-port) {
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 2rem;
+        }
+    }
+    &__item {
+        flex: 0 0 calc(50% - 2rem);
+        &--2 {
+            display: flex;
+            flex-direction: column;
+            @include responsive(tab-port) {
+                grid-column: 2 / span 2;
+            }
+            @include responsive(tab-port) {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+    }
+    &__title {
+        font: {
+            family: 'Righteous', cursive;
+            size: 1.5rem;
+            weight: 300;
+        }
+    }
+    &__text {
+        display: flex;
+        flex-direction: column;
+    }
+    &__number {
+        color: rgb(93, 93, 238);
+        font-weight: 600;
+    }
+    &__link {
+        font-size: 2rem;
+        margin-right: 1rem;
+        color: #000000;
+        text-decoration: none;
+    }
+    &__img-icon {
+        width: 30px;
+    }
+    &__img {
+        padding: 2rem 0;
+        width: 35%;
+        @include responsive(phone) {
+            max-width: 100%;
+        }
+        @include responsive(tab-port) {
+            max-width: 100%;
+            width: 26%;
+            object-fit: contain;
+        }
+    }
+    &__desing {
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        @include responsive(tab-port) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    &__ridersoft {
+        @include responsive(tab-port) {
+            flex: 0 0 calc(50% - 2rem);
+        }
+        &--1 {
+            @include responsive(tab-port) {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    &__copy {
+        @include responsive(phone) {
+            text-align: end;
+        }
+    }
+    &__img-rider {
+        width: 50%;
+        @include responsive(phone) {
+            width: 30%;
+        }
+        @include responsive(tab-port) {
+            width: 50%;
+        }
+    }
+}

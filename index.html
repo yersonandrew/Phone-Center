@@ -1,0 +1,424 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Phone Center</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main-styles.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+    <!-- Add your site or application content here -->
+    <!-- <div class="inicio">
+        <img src="/img/logo vertical color.png" alt="" class="inicio__img">
+    </div> -->
+
+
+    <section class="barra-menu">
+        <div class="barra-menu__container">
+            <div class="barra-menu__contenedor">
+                <a href="index.html" class="barra-menu__link-logo">
+                    <img src="img/logo vertical color.png" alt="" class="barra-menu__img">
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="sidebar">
+        <div class="sidebar__menu-boton">
+            <span class="sidebar__hamburguesa">
+                    <i class="fas fa-bars"></i>
+                </span>
+        </div>
+        <div class="sidebar__slider" id="sidebar">
+            <h3 class="sidebar__title">
+                Menu Principal
+            </h3>
+            <nav class="sidebar__navegacion">
+                <ul class="sidebar__list">
+                    <li class="sidebar__item">
+                        <a href="index.html" class="sidebar__link">
+                            <span class="sidebar__icon">
+                                <i class="fas fa-home"></i>
+                            </span> Home
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="services.html" class="sidebar__link">
+                            <span class="sidebar__icon">
+                                <i class="fas fa-code-branch"></i>
+                            </span> Servicios
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="contacto.html" class="sidebar__link">
+                            <span class="sidebar__icon">
+                                <i class="fas fa-id-card"></i>
+                            </span> Contactanos
+                        </a>
+                    </li>
+                    <li class="sidebar__item sidebar__item--productos">
+                        <a href="#" class="sidebar__link">
+                            <span class="sidebar__icon">
+                                <i class="fas fa-cart-arrow-down"></i>
+                                Productos
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+
+
+    <header class="header">
+        <div class="header__slider">
+            <div class="header__container header__active">
+                <div class="header__contenedor">
+                    <!-- <div class="header__item-img">
+                        <img src="/img/logoS.png" alt="" class="header__img">
+                    </div> -->
+
+                    <h1 class="header__title">
+                        micro electronica
+                    </h1>
+                </div>
+            </div>
+            <div class="header__container header__container--2">
+                <div class="header__contenedor">
+                    <!-- <div class="header__item-img">
+                        <img src="/img/logoS.png" alt="" class="header__img">
+                    </div> -->
+
+                    <h1 class="header__title">
+                        Ventas Dispositivos Moviles y Accesorios
+                    </h1>
+                </div>
+            </div>
+            <div class="header__container header__container--3 ">
+                <div class="header__contenedor">
+                    <!-- <div class="header__item-img">
+                        <img src="/img/logoS.png" alt="" class="header__img">
+                    </div> -->
+
+                    <h1 class="header__title">
+                        Reparacion de impresoras
+                    </h1>
+                </div>
+            </div>
+            <div class="header__container  header__container--4">
+                <div class="header__contenedor">
+                    <!-- <div class="header__item-img">
+                        <img src="/img/logoS.png" alt="" class="header__img">
+                    </div> -->
+
+                    <h1 class="header__title">
+                        Reparacion Equipos de computo
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="header__botones">
+            <span href="#" class="header__izq">
+                <i class="fas fa-chevron-circle-left"></i>
+            </span>
+            <span href="#" class="header__der">
+                <i class="fas fa-chevron-circle-right"></i>
+            </span>
+        </div>
+
+    </header>
+
+
+    <section class="welcome">
+        <div class="welcome__container">
+            <div class="welcome__contenedor">
+                <h2 class="welcome__title">Bienvenidos</h2>
+                <img src="img/mas.png" alt="" class="welcome__img">
+                <P class="welcome__text">Visitanos y con gusto te brindaremos un servicio de calidad.</P>
+            </div>
+        </div>
+    </section>
+
+
+
+    <main class="services">
+        <h2 class="services__title-one">Servicios</h2>
+        <div class="services__contenedor">
+            <div class="services__item services__item--1">
+                <div class="services__img-container">
+                    <img src="img/man-repairing-circuit-board-in-laptop.jpg" alt="" class="services__img" />
+                </div>
+                <div class="services__description">
+                    <h3 class="services__title">Computadoras</h3>
+                    <p class="services__text">Servicio Tecnico</p>
+                    <p class="services__text">
+                        Diagnostico y reparacion en computadoras portatiles y de escritorio...
+                    </p>
+                    <div class="services__btn">
+                        <a href="services.html" class="services__btn-link">
+                            leer mas...
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="services__item services__item--2">
+                <div class="services__img-container">
+                    <img src="img/moviles.jpg" alt="" class="services__img" />
+                </div>
+                <div class="services__description">
+                    <h3 class="services__title">Celulares</h3>
+                    <p class="services__text">Servicio Tecnico</p>
+                    <p class="services__text">
+                        Diagnostico y reparacion en SmartPhones y Tablets...
+                    </p>
+                    <div class="services__btn">
+                        <a href="services.html" class="services__btn-link">
+                            leer mas...
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="services__item services__item--3">
+                <div class="services__img-container">
+                    <img src="img/printer-933098_1920.jpg" alt="" class="services__img" />
+                </div>
+                <div class="services__description">
+                    <h3 class="services__title">Impresoras</h3>
+                    <p class="services__text">Servicio Tecnico</p>
+                    <p class="services__text">
+                        Diagnostico y reparacion en Impresoras con sistema de tintas continua o laser
+                    </p>
+                    <div class="services__btn">
+                        <a href="services.html" class="services__btn-link">
+                            leer mas...
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <section class="contacto">
+        <div class="contacto__contenedor">
+            <h2 class="contacto__title">
+                <span class="contacto__title--color">
+                            ¡¡
+                        </span> Contactanos
+                <span class="contacto__title--color">
+                            !!
+                        </span>
+            </h2>
+            <div class="contacto__contenedor">
+                <form class="contacto__form">
+                    <legend class="contacto__title--form">
+                        <span class="contacto__title--color">
+                                    Datos
+                                </span> Usuario
+                    </legend>
+                    <div class="contacto__nombre">
+                        <label class="contacto__label" for="name">
+                                    Nombre completo
+                            </label>
+                        <input class="contacto__input" type="text" id="name" placeholder="eje: Yerson Andres Chogo Serpa">
+                    </div>
+
+                    <div class="contacto__celular">
+                        <label class="contacto__label" for="cel">
+                                    Celular
+                                </label>
+                        <input class="contacto__input" type="tel" id="cel">
+                    </div>
+
+                    <div class="contacto__email">
+                        <label class="contacto__label" for="email">
+                                    Correo electronico
+                                </label>
+                        <input class="contacto__input" type="email" id="email">
+                    </div>
+                    <div class="contacto__textarea">
+                        <label for="mensaje" class="contacto__mensaje">
+                                    Mensaje
+                                </label>
+                        <textarea name id="mensaje" cols="30" rows="5" class="contacto__mensaje--espacio"></textarea>
+                    </div>
+                    <div class="contacto__button">
+                        <button class="contacto__click">
+                                Enviar
+                            </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="cliente">
+        <div class="cliente__contenedor">
+            <h5 class="cliente__title">Nuestros Clientes son:</h5>
+            <div class="cliente__numero-animacion">
+                <span class="cliente__numero">5</span>
+                <span class="cliente__numero">0</span>
+                <span class="cliente__numero">5</span>
+            </div>
+            <p class="cliente__texto">
+                unete a esta comunidad
+            </p>
+
+        </div>
+    </section>
+
+    </main>
+
+
+
+    <div id="mapa" class="mapa"></div>
+
+
+
+
+
+    <!--   <section class="testimoniales">
+        <div class="testimoniales__contenedor">
+            <h2 class="testimoniales__title">
+                Testmoniales
+            </h2>
+            <div class="testimoniales__container">
+                <div class="testimoniales__datos">
+                    <img class="testimoniales__img" src="/img/cliente.png" alt="">
+                    <p class="testimoniales__name">
+                        Juana Andrea
+                        <span class="testimoniales__name-color">
+                                Florez Hernandez
+                            </span>
+                    </p>
+                </div>
+                <p class="testimoniales__text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem officia laborum distinctio culpa temporibus expedita accusamus
+                </p>
+            </div>
+        </div>
+        <div class="testimoniales__direcciones">
+            <a href="#" class="testimoniales__link">
+                <span class="testimoniales__izq">
+                    <i class="fas fa-chevron-circle-left"></i>
+                </span>
+            </a>
+            <a href="#" class="testimoniales__link">
+                <span class="testimoniales__der">
+                    <i class="fas fa-chevron-circle-right"></i>
+                </span>
+            </a>
+        </div>
+    </section> -->
+
+    <footer class="footer">
+        <div class="footer__contenedor">
+            <div class="footer__description">
+                <div class="footer__item footer__item--1">
+                    <h4 class="footer__title">
+                        Contacto
+                    </h4>
+                    <p class="footer__text">
+                        <span class="footer__number">
+                            Ventas : 
+                        </span> 323 479 3891
+                    </p>
+                    <p class="footer__text">
+                        <span class="footer__number">
+                            Reparacion Movil : 
+                        </span> 323 479 3891
+                    </p>
+                    <p class="footer__text">
+                        <span class="footer__number">
+                            Reparacion Equipos computo : 
+                        </span> 323 479 3891
+                    </p>
+                </div>
+                <div class="footer__item footer__item--2">
+                    <div class="footer__contacto">
+                        <h4 class="footer__title">
+                            Redes Sociales
+                        </h4>
+                        <a href="#" class="footer__link">
+                            <img src="img/whatsapp.png" alt="" class="footer__img-icon">
+                        </a>
+                        <a href="#" class="footer__link">
+                            <img src="img/facebook.png" alt="" class="footer__img-icon">
+                        </a>
+                        <a href="#" class="footer__link">
+                            <img src="img/instagram.png" alt="" class="footer__img-icon">
+                        </a>
+                        <a href="#" class="footer__link">
+                            <img src="img/gorjeo.png" alt="" class="footer__img-icon">
+                        </a>
+                    </div>
+
+
+                    <img src="img/bn.png" alt="" class="footer__img">
+                </div>
+            </div>
+            <div class="footer__desing">
+                <div class="footer__ridersoft footer__ridersoft--1">
+                    <p class="footer__text-desing">
+                        Diseño por:
+                    </p>
+                    <img src="img/rider.png" alt="" class="footer__img-rider">
+                </div>
+                <div class="footer__ridersoft">
+                    <p class="footer__copy">
+                        Todos los derechos Reservador&copy;
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="js/vendor/modernizr-3.11.2.min.js "></script>
+    <script src="js/plugins.js "></script>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js "></script>
+    <script src="js/main.js "></script>
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function() {
+            ga.q.push(arguments)
+        };
+        ga.q = [];
+        ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('set', 'anonymizeIp', true);
+        ga('set', 'transport', 'beacon');
+        ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js " async></script>
+</body>
+
+</html>

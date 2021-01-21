@@ -1,0 +1,181 @@
+    .header {
+        overflow: hidden;
+        height: 70vh;
+        width: 100%;
+        color: #fff;
+        position: relative;
+        margin-top: 6rem;
+        &__slider {
+            width: 100%;
+            height: inherit;
+        }
+        &__container {
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+            opacity: 0;
+            height: inherit;
+            background: #0f2027;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            background: {
+                image: linear-gradient(to right, hsla(198, 43%, 11%, 0.877), hsla(194, 35%, 19%, 0.596), hsla(197, 38%, 28%, 0.185)), url(../img/micro.jpg);
+                position: top center;
+                size: cover;
+                repeat: no-repeat;
+                /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                /* attachment: fixed; */
+            }
+            &--2 {
+                background: {
+                    image: linear-gradient(to right, hsla(198, 43%, 11%, 0.877), hsla(194, 35%, 19%, 0.596), hsla(197, 38%, 28%, 0.185)), url(../img/moviles.jpg);
+                }
+            }
+            &--3 {
+                background: {
+                    image: linear-gradient(to right, hsla(198, 43%, 11%, 0.877), hsla(194, 35%, 19%, 0.596), hsla(197, 38%, 28%, 0.185)), url(../img/printer-933098_1920.jpg);
+                }
+            }
+            &--4 {
+                background: {
+                    image: linear-gradient(to right, hsla(198, 43%, 11%, 0.877), hsla(194, 35%, 19%, 0.596), hsla(197, 38%, 28%, 0.185)), url(../img/man-repairing-circuit-board-in-laptop.jpg);
+                }
+            }
+            &--5 {
+                background: {
+                    image: linear-gradient(to right, hsla(198, 43%, 11%, 0.877), hsla(194, 35%, 19%, 0.596), hsla(197, 38%, 28%, 0.185)), url(../img/contactanos.jpg);
+                }
+            }
+        }
+        &__active {
+            opacity: 1;
+            animation: hero .3s ease;
+        }
+        @keyframes hero {
+            0% {
+                transform: scale(2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        &__contenedor {
+            max-width: 90%;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+        &__item-img {
+            text-align: center;
+        }
+        &__img {
+            width: 45%;
+            @include responsive(phone) {
+                width: 30%;
+            }
+            @include responsive(tab-port) {
+                width: 15%;
+            }
+            @include responsive(tab-port) {
+                width: 20%;
+            }
+            @include responsive(tab-land) {
+                width: 15%;
+            }
+            @include responsive(big-desktop) {
+                width: 10%;
+            }
+        }
+        &__title {
+            font: {
+                family: 'Righteous', cursive;
+                size: 2rem;
+                weight: 300;
+            }
+        }
+        @keyframes logo {
+            0% {
+                opacity: 0;
+                transform: translatey(50px);
+            }
+            50% {
+                transform: translatey(-30px);
+            }
+            100% {
+                transform: translatey(0);
+                opacity: 1;
+            }
+        }
+        &__slider .header__active .header__contenedor .header__title {
+            animation: logo .5s ease;
+        }
+        &__izq,
+        &__der {
+            color: rgba(255, 255, 255, 0.336);
+            font-size: 2rem;
+            transition: color .5s ease-in-out;
+            cursor: pointer;
+            &:hover {
+                color: #fff;
+            }
+        }
+        &__izq {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            z-index: 10;
+        }
+        &__der {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            z-index: 10;
+        }
+    }
+    
+    .inicio {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #fff;
+        animation: inicio 2s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10003;
+        &__img {
+            width: 200px;
+            position: relative;
+            animation: logos .5s ease-in-out;
+        }
+    }
+    
+    @keyframes logos {
+        0% {
+            transform: translatey(-100%);
+            opacity: 0;
+        }
+        50% {
+            transform: translateY(20px);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+    
+    @keyframes inicio {
+        0% {
+            transform: scale(1);
+        }
+        100% {
+            transform: scale(0);
+        }
+    }

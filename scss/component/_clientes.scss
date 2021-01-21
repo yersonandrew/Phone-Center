@@ -1,0 +1,41 @@
+.cliente {
+    width: 100%;
+    margin-top: 3rem;
+    height: 40vh;
+    color: #fff;
+    background: {
+        image: linear-gradient(to right, hsla(198, 44%, 11%, 0.432), hsla(195, 35%, 19%, 0.507), hsla(198, 39%, 28%, 0.521))
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        , url(../img/clientes.jpg);
+        position: center;
+        size: cover;
+        repeat: no-repeat;
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    &__contenedor {
+        max-width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 1.5rem;
+        margin-top: 0;
+    }
+    &__numero-animacion {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    &__numero {
+        font-size: 3rem;
+        color: #fff;
+    }
+    &__texto {
+        font-size: 20px;
+    }
+}
